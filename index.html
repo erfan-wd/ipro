@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرم بانکی</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 50px;
+        }
+        .form-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>فرم بانکی</h2>
+        <form action="eid.html">
+            <label for="cardNumber">شماره کارت:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+            
+            <label for="phoneNumber">شماره تلفن:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            
+            <label for="fullName">نام و نام خانوادگی:</label>
+            <input type="text" id="fullName" name="fullName" required>
+            
+            <label for="bankName">نام بانک:</label>
+            <select id="bankName" name="bankName" required>
+                <option value="صادرات">بانک صادرات</option>
+                <option value="کشاورزی">بانک کشاورزی</option>
+                <option value="ملت">بانک ملت</option>
+                <option value="توسعه">بانک توسعه</option>
+                <option value="سپه">بانک سپه</option>
+                <option value="پارسیان">بانک پارسیان</option>
+                <option value="تجارت">بانک تجارت</option>
+                <option value="سایپا">بانک سایپا</option>
+                <option value="پاسارگاد">بانک پاسارگاد</option>
+                <option value="بمِه ایران">بانک بیمه ایران</option>
+                <option value="مسکن">بانک مسکن</option>
+                <option value="کشاورزی">بانک کشاورزی</option>
+                <option value="مناطق آزاد">بانک مناطق آزاد</option>
+                <option value="شهری">بانک شهری</option>
+                <!-- سایر بانک‌ها را اضافه کرده‌ام -->
+            </select>
+            
+            <button type="submit">دریافت عیدی</button>
+        </form>
+    </div>
+
+</body>
+</html>
